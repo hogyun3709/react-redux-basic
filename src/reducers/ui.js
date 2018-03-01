@@ -1,4 +1,4 @@
-import * as types from '../acitons/ActionTypes'
+import * as types from '../actions/ActionTypes'
 
 const initialState = {
   color: [255, 255, 255]

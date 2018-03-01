@@ -1,4 +1,4 @@
-import * as types from './ActionType';
+import * as types from './ActionTypes';
 
 export function increment(){
   return {
@@ -8,7 +8,7 @@ export function increment(){
 
 export function decrement(){
   return {
-    types: types.DECREMENT
+    type: types.DECREMENT
   };
 }
 
