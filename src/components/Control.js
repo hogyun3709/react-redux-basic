@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const propTypes = {
   onPlus: PropTypes.func,
   onSubtract: PropTypes.func,
-  onRandomColor: PropTypes.func
+  onRandomizeColor: PropTypes.func
 };
 
 function createWarning(funcName){
@@ -13,20 +13,18 @@ function createWarning(funcName){
 const defaultProps = {
   onPlus: createWarning('onPlus'),
   onSubtract: createWarning('onSubtract'),
-  onRandomColor: createWarning('onRandomColor')
+  onRandomizeColor: createWarning('onRandomizeColor')
 
 
 };
 class Control extends Component {
-    constructor(props) {
-        super(props);
-    }
+    
     render() {
         return(
             <div>
               <button onClick={this.props.onPlus}>+</button>
             <button onClick={this.props.onSubtract}>-</button>
-          <button onClick={this.props.onRandomColor}>Random Background</button>
+          <button onClick={this.props.onRandomizeColor}>Random Background</button>
 
             </div>
         );
